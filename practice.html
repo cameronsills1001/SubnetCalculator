@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Subnet Practice</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand kode-mono" href="#">Generic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Practice</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Practice -->
+    <div class="calculator">
+        <h1>Subnet Practice</h1>
+        <p class="instructions">Instructions: Click the "New Subnet" button to generate a new subnet. The IP address and either the subnet mask or CIDR
+            will be visibile. Try to calculate the remaining fields either in your head or on paper. You can check to see if you're correct
+            by clicking the fields to make the correct answers visible. 
+        </p>
+        <button class="btn btn-secondary" id="new-subnet">New Subnet</button>
+        <!-- output section -->
+        <div class="conatainer" id="output-section">
+            <div class="row mb-3">
+                <div class="col">IP Address</div>
+                <div class="col" id="ip-address"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Subnet Mask</div>
+                <div class="col inv-field" id="subnet-mask"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">CIDR</div>
+                <div class="col inv-field" id="cidr"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Network Address</div>
+                <div class="col inv inv-field" id="network-address"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">First Host</div>
+                <div class="col inv inv-field" id="first-host"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Last Host</div>
+                <div class="col inv inv-field" id="last-host"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Broadcast</div>
+                <div class="col inv inv-field" id="broadcast"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Wildcard Mask</div>
+                <div class="col inv inv-field" id="wildcard-mask"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">Number of Hosts</div>
+                <div class="col inv inv-field" id="num-hosts"></div>
+            </div>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitch">
+            <label class="form-check-label" for="flexSwitchCheckDefault" id="theme-label">Light</label>
+        </div>
+    </div>
+    <footer class="py-3 my-4">
+        <p class="text-center text-muted">© 2024 Generic Software</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cameronsills1001.github.io/IpAddressInfo/ipAddressInfo.js"></script>
+    <script src="./scripts/setThemes.js"></script>
+    <script src="./scripts/subnetPractice.js"></script>
+</body>
+
+</html>
